@@ -24,6 +24,6 @@ require("./config/db.js")
 const router = require("./routes/router.js");
 app.use(router);
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
     console.log(`App rodando na porta ${port}`);
 })
